@@ -1,4 +1,4 @@
-# This is a POC for improving FSharp coding with data oriented software engineering using SOTA models
+# This is a POC for improving FSharp code  with data oriented software engineering using SOTA models
 
 ## Usage
 - Insert your anthropic key
