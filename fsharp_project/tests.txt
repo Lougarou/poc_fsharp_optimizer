@@ -1,0 +1,106 @@
+# All Graph Traversal Test Cases
+
+[TEST: Linear Graph]
+[CITIES]
+A: E95,Diesel
+B: Diesel
+C: E95,E98
+D: Diesel,E98
+[CONNECTIONS]
+A -> B : 10.0
+B -> C : 20.0
+C -> D : 15.0
+[START]
+A
+
+[TEST: Star Graph]
+[CITIES]
+Center: Diesel
+North: E95|Diesel
+South: E95,Diesel
+East: E98
+West: E95
+[CONNECTIONS]
+Center -> North : 10.0
+Center -> South : 10.0
+Center -> East : 10.0
+Center -> West : 10.0
+[START]
+Center
+
+[TEST: Disconnected Islands]
+[CITIES]
+Island1_A: E95
+Island1_B: Diesel
+Island2_A: E95
+Island2_B: E95
+[CONNECTIONS]
+Island1_A -> Island1_B : 10.0
+Island2_A -> Island2_B : 10.0
+[START]
+Island1_A
+
+[TEST: Circular Graph]
+[CITIES]
+City1: E95,Diesel
+City2: Diesel
+City3: E95
+City4: Diesel
+City5: E95,E98
+[CONNECTIONS]
+City1 -> City2 : 10.0
+City2 -> City3 : 10.0
+City3 -> City4 : 10.0
+City4 -> City5 : 10.0
+City5 -> City1 : 10.0
+[START]
+City1
+
+[TEST: No E95 Pumps]
+[CITIES]
+A: Diesel
+B: E98,Diesel
+C: Diesel
+[CONNECTIONS]
+A -> B : 10.0
+B -> C : 10.0
+[START]
+A
+
+[TEST: Complex Network]
+[CITIES]
+CityA: E95,Diesel|E98|Diesel
+CityB: Diesel,E98
+CityC: E95
+CityD: Diesel|Diesel|E95,E98
+CityE: E98,Diesel
+CityF: E95,Diesel,E98
+[CONNECTIONS]
+CityA -> CityB : 15.0
+CityA -> CityC : 20.0
+CityB -> CityD : 10.0
+CityC -> CityE : 25.0
+CityD -> CityE : 30.0
+CityD -> CityF : 12.0
+CityE -> CityF : 8.0
+[START]
+CityA
+
+[TEST: Single City]
+[CITIES]
+OnlyCity: E95,Diesel,E98
+[CONNECTIONS]
+[START]
+OnlyCity
+
+[TEST: Triangle]
+[CITIES]
+Vertex1: E95
+Vertex2: Diesel
+Vertex3: E95,E98
+[CONNECTIONS]
+Vertex1 -> Vertex2 : 5.0
+Vertex2 -> Vertex3 : 5.0
+Vertex3 -> Vertex1 : 5.0
+[START]
+Vertex2

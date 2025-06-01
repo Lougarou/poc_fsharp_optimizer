@@ -1,0 +1,53 @@
+# Expected Results for All Test Cases
+
+[TEST: Linear Graph]
+[E95_CITIES]
+A
+C
+[TRAVERSAL_ORDER]
+A, B, C, D
+
+[TEST: Star Graph]
+[E95_CITIES]
+North
+South
+West
+[TRAVERSAL_ORDER]
+Center, East, North, South, West
+
+[TEST: Disconnected Islands]
+[E95_CITIES]
+Island1_A
+[TRAVERSAL_ORDER]
+Island1_A, Island1_B
+
+[TEST: Circular Graph]
+[E95_CITIES]
+City1
+City3
+City5
+
+[TEST: No E95 Pumps]
+[E95_CITIES]
+[TRAVERSAL_ORDER]
+A, B, C
+
+[TEST: Complex Network]
+[E95_CITIES]
+CityA
+CityC
+CityD
+CityF
+
+[TEST: Single City]
+[E95_CITIES]
+OnlyCity
+[TRAVERSAL_ORDER]
+OnlyCity
+
+[TEST: Triangle]
+[E95_CITIES]
+Vertex1
+Vertex3
+[TRAVERSAL_ORDER]
+Vertex2, Vertex1, Vertex3
