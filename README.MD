@@ -20,6 +20,7 @@ The response times show a decreasing trend from 126.9ms → 110.0ms → 107.7ms,
 I stopped after 10 rounds because I was running out of API credits (cost me 20$).
 
 ![Performance Improvement Graph](graph.png)
+1,2,3 should be read as 1,4,10
 
 ## F# Performance Optimization Checklist
 
