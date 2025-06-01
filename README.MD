@@ -19,56 +19,7 @@ There is a sample fsharp_project in the `fsharp_project` folder.
 The response times show a decreasing trend from 126.9ms → 110.0ms → 107.7ms, indicating improving performance.
 I stopped after 10 rounds because I was running out of API credits (cost me 20$).
 
-<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="400" height="300" fill="#f8f9fa"/>
-  <!-- Grid lines -->
-  <g stroke="#e0e0e0" stroke-width="1">
-    <line x1="50" y1="50" x2="350" y2="50"/>
-    <line x1="50" y1="100" x2="350" y2="100"/>
-    <line x1="50" y1="150" x2="350" y2="150"/>
-    <line x1="50" y1="200" x2="350" y2="200"/>
-    <line x1="50" y1="250" x2="350" y2="250"/>
-  </g>
-  <!-- Axes -->
-  <g stroke="#333" stroke-width="2">
-    <line x1="50" y1="50" x2="50" y2="250"/>
-    <line x1="50" y1="250" x2="350" y2="250"/>
-  </g>
-  <!-- Y-axis labels -->
-  <g fill="#333" font-family="Arial, sans-serif" font-size="12">
-    <text x="10" y="55" text-anchor="middle">130</text>
-    <text x="10" y="105" text-anchor="middle">120</text>
-    <text x="10" y="155" text-anchor="middle">110</text>
-    <text x="10" y="205" text-anchor="middle">100</text>
-    <text x="10" y="255" text-anchor="middle">90</text>
-  </g>
-  <!-- X-axis labels -->
-  <g fill="#333" font-family="Arial, sans-serif" font-size="12">
-    <text x="100" y="270" text-anchor="middle">1</text>
-    <text x="200" y="270" text-anchor="middle">2</text>
-    <text x="300" y="270" text-anchor="middle">3</text>
-  </g>
-  <!-- Data points and line -->
-  <polyline points="100,73 200,150 300,172" stroke="#4285f4" stroke-width="2" fill="none"/>
-  <!-- Data point circles -->
-  <g fill="#4285f4" stroke="#fff" stroke-width="2">
-    <circle cx="100" cy="73" r="5"/>
-    <circle cx="200" cy="150" r="5"/>
-    <circle cx="300" cy="172" r="5"/>
-  </g>
-  <!-- Value labels -->
-  <g fill="#333" font-family="Arial, sans-serif" font-size="11" font-weight="bold">
-    <text x="100" y="65" text-anchor="middle">126.9</text>
-    <text x="200" y="142" text-anchor="middle">110.0</text>
-    <text x="300" y="164" text-anchor="middle">107.7</text>
-  </g>
-  <!-- Title -->
-<text x="200" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">Execution Time (ms)</text>
-  <!-- X-axis title -->
-<text x="200" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333">Measurement #</text>
-</svg>
-
+![Performance Improvement Graph](graph.png)
 
 ## F# Performance Optimization Checklist
 
