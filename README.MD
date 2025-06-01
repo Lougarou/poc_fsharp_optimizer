@@ -12,6 +12,7 @@ There is a sample fsharp_project in the `fsharp_project` folder.
 - We take the fsharp project with BenchmarkDotNet
 - Run it in Docker and parse BenchmarkDotNet results (execution time only for now)
 - Go through improvement checklist and ask the model to propose a change based on that improvement (see improvement list below)
+- Make sure that the logic is correct by running an evaluation of input and checking the output
 - Run the benchmark again (At the moment if the code fails to compile, we skip the improvement)
 - If the improvement is better than the previous one, we keep it and repeat the process
 
